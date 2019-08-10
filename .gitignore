@@ -1,6 +1,4 @@
 node_modules
 venv
 _ref
-
-carbon_rc.py
-styles.qss
+build

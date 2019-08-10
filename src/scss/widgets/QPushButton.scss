@@ -1,0 +1,53 @@
+QPushButton {
+  border: 0 solid transparent;
+  border-radius: 0;
+  background-color: $interactive-02;
+  color: $text-04;
+  padding: 8px 16px;
+  text-align: left;
+
+  &[text="OK"] {
+    color: $text-04;
+    background-color: $interactive-01;
+
+    &:hover {
+      background-color: $hover-primary;
+    }
+
+    &:pressed {
+      background-color: $active-primary;
+    }
+  }
+
+  &[text="Delete"] {
+    color: $text-04;
+    background-color: #dc222b;
+    //background-color: $support-01;
+
+    &:hover {
+      background-color: $hover-danger;
+    }
+
+    &:pressed {
+      background-color: $active-danger;
+    }
+  }
+
+  &:hover {
+    background-color: $hover-secondary;
+  }
+
+  &:pressed {
+    background-color: $active-secondary;
+  }
+
+  &:focus {
+    border: 2px solid $focus;
+  }
+
+  &:flat {
+  }
+
+  &:default {
+  }
+}

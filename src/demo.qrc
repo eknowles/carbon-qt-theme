@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="fonts">
+    <file>../build/assets/fonts/IBMPlexMono-Bold.ttf</file>
+    <file>../build/assets/fonts/IBMPlexMono-Regular.ttf</file>
+    <file>../build/assets/fonts/IBMPlexSans-Italic.ttf</file>
+    <file>../build/assets/fonts/IBMPlexSans-Regular.ttf</file>
+  </qresource>
+  <qresource prefix="svg">
+    <file>../build/assets/svg/apps.svg</file>
+    <file>../build/assets/svg/chevron--down.svg</file>
+    <file>../build/assets/svg/chevron--up.svg</file>
+    <file>../build/assets/svg/close.svg</file>
+  </qresource>
+</RCC>

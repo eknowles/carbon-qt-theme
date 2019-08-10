@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "./_scripts/install-qt.sh",
+    "build": "node ./_scripts/build.js",
+    "start": "source venv/bin/activate && pyuic5 build/demo.ui -p",
+    "prestart": "yarn build"
+  },
   "dependencies": {
     "@carbon/icons": "^10.4.0",
     "@carbon/layout": "^10.3.0",

@@ -1,0 +1,36 @@
+QSpinBox,
+QTimeEdit,
+QDateTimeEdit {
+
+  &::up-button,
+  &::down-button {
+    border: 0;
+    width: 40px;
+
+    &:hover {
+      border: 0;
+      background: $field-02;
+    }
+
+    &:pressed {
+      border: 0;
+      background: $field-02;
+    }
+  }
+
+  &::up-arrow {
+    image: url('./build/assets/svg/chevron--up.svg');
+
+    &:disabled, &:off {
+      /* off state when value is max */
+    }
+  }
+
+  &::down-arrow {
+    image: url('./build/assets/svg/chevron--down.svg');
+
+    &:disabled, &:off {
+      /* off state when value in min */
+    }
+  }
+}

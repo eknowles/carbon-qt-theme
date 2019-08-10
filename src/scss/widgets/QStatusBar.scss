@@ -1,0 +1,8 @@
+QStatusBar {
+  background: $ui-background;
+  color: $text-02;
+  font: 10px 'IBM Plex Mono';
+
+  &::item {
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../node_modules/@carbon/themes/scss/index';
+@import '../../node_modules/@carbon/type/scss/index';
+@import '../../node_modules/@carbon/layout/scss/index';
+
+//$carbon--theme: $carbon--theme--white;
+$carbon--theme: $carbon--theme--g90;
+
+@include carbon--theme();
+
+@function em2px($target, $context: $carbon--base-font-size) {
+  @if $target == 0 { @return 0 }
+  @return ($target / 1em) * ($context / 1em) * 16 + 0px;
+}
+
+// Direct Styles
+@import 'widgets/QWidget';
+@import 'widgets/QLabel';
+@import 'widgets/QMainWindow';
+@import 'widgets/QDockWidget';
+@import 'widgets/QPushButton';
+@import 'widgets/QComboBox';
+@import 'widgets/QStatusBar';
+@import 'widgets/QSpinBox';
+
+// Multiple Styles (i.e.) these directly target a group of Widgets
+@import 'widgets/InputFields';
+@import 'widgets/Tabs';
+
+* {
+  background-color: $ui-background;
+}

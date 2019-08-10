@@ -1,0 +1,37 @@
+QDateEdit,
+QSpinBox,
+QTimeEdit,
+QDateTimeEdit,
+QLineEdit,
+QComboBox,
+QFontComboBox,
+QPlainTextEdit {
+  background: $field-01;
+  border-bottom: 1px solid $ui-04;
+  border-left: 2px solid transparent;
+  border-right: 0 solid transparent;
+  padding: 2px 16px;
+  line-height: 1;
+  height: 36px;
+  font: 400 14px "IBM Plex Sans";
+
+  &:focus {
+    border: 2px solid $focus;
+  }
+
+  &[readOnly="true"], &[readOnly="true"]:focus {
+    color: $text-03;
+    border: 1px solid transparent;
+  }
+}
+
+QPlainTextEdit {
+  padding: 8px 16px;
+}
+
+QDateEdit,
+QSpinBox,
+QDateTimeEdit,
+QTimeEdit {
+  font: 14px "IBM Plex Mono";
+}
