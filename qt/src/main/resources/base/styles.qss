@@ -1,3 +1,136 @@
 QWidget {
+  font: 14px "IBM Plex Sans";
+  background-color: #171717;
+  border: 0px solid #171717;
+  color: #f3f3f3;
+  selection-background-color: #0062ff;
+  selection-color: #f3f3f3; }
+  QWidget:disabled {
+    background-color: #282828;
+    color: #6f6f6f;
+    selection-background-color: #6f6f6f;
+    selection-color: #f3f3f3; }
+  QWidget::item:selected {
+    background-color: #0062ff; }
+  QWidget::item:hover {
+    background-color: #6f6f6f;
+    color: #ffffff; }
+
+QLabel {
+  color: #bebebe;
+  font: 400 12px "IBM Plex Sans"; }
+
+QMainWindow {
+  background-color: #171717; }
+  QMainWindow::separator {
+    background-color: #282828;
+    border: 0 solid #282828;
+    margin: 0;
+    spacing: 0;
+    padding: 0; }
+    QMainWindow::separator:hover {
+      background-color: #353535;
+      border: 0 solid #353535; }
+    QMainWindow::separator:horizontal {
+      width: 2px; }
+    QMainWindow::separator:vertical {
+      height: 2px; }
+
+QDockWidget {
+  color: #f3f3f3;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  titlebar-close-icon: url("./src/main/resources/src/icons/close.svg");
+  titlebar-normal-icon: url("./src/main/resources/src/icons/launch.svg"); }
+  QDockWidget::title {
+    text-align: left;
+    margin-left: -25px;
+    padding: 0;
+    background: #282828;
+    alignment: left; }
+  QDockWidget::float-button, QDockWidget::close-button {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    text-align: right; }
+    QDockWidget::float-button:hover, QDockWidget::close-button:hover {
+      background: #353535; }
+
+QPushButton {
+  border: 0 solid transparent;
+  border-radius: 0;
+  background-color: #6f6f6f;
+  color: #ffffff;
+  min-width: 80px;
+  padding: 16px;
+  text-align: left; }
+  QPushButton:hover {
+    background-color: #606060; }
+  QPushButton:pressed {
+    background-color: #3d3d3d; }
+  QPushButton:focus {
+    border: 2px solid #ffffff; }
+
+QComboBox::drop-down {
+  subcontrol-origin: padding;
+  subcontrol-position: center right;
+  width: 40px;
+  border: 0; }
+  QComboBox::drop-down:hover {
+    background: #3d3d3d; }
+  QComboBox::drop-down:on {
+    border: 2px solid #ffffff; }
+
+QComboBox::down-arrow {
+  image: url("./src/main/resources/src/icons/chevron--down.svg"); }
+  QComboBox::down-arrow:on {
+    image: url("./src/main/resources/src/icons/chevron--up.svg"); }
+
+QDateEdit,
+QSpinBox,
+QTimeEdit,
+QLineEdit,
+QComboBox,
+QFontComboBox,
+QPlainTextEdit {
   background: #282828;
-  color: #f3f3f3; }
+  border-bottom: 1px solid #6f6f6f;
+  border-left: 2px solid transparent;
+  border-right: 0 solid transparent;
+  padding: 2px 16px;
+  line-height: 1;
+  height: 36px;
+  font: 14px "IBM Plex Sans"; }
+  QDateEdit:focus,
+  QSpinBox:focus,
+  QTimeEdit:focus,
+  QLineEdit:focus,
+  QComboBox:focus,
+  QFontComboBox:focus,
+  QPlainTextEdit:focus {
+    border: 2px solid #ffffff; }
+  QDateEdit[readOnly="true"], QDateEdit[readOnly="true"]:focus,
+  QSpinBox[readOnly="true"],
+  QSpinBox[readOnly="true"]:focus,
+  QTimeEdit[readOnly="true"],
+  QTimeEdit[readOnly="true"]:focus,
+  QLineEdit[readOnly="true"],
+  QLineEdit[readOnly="true"]:focus,
+  QComboBox[readOnly="true"],
+  QComboBox[readOnly="true"]:focus,
+  QFontComboBox[readOnly="true"],
+  QFontComboBox[readOnly="true"]:focus,
+  QPlainTextEdit[readOnly="true"],
+  QPlainTextEdit[readOnly="true"]:focus {
+    color: #6f6f6f;
+    border: 1px solid transparent; }
+
+QPlainTextEdit {
+  padding: 16px; }
+
+QDateEdit,
+QSpinBox,
+QTimeEdit {
+  font: 14px "IBM Plex Mono"; }

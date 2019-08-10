@@ -4,7 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@carbon/icons": "^10.4.0",
+    "@carbon/layout": "^10.3.0",
     "@carbon/themes": "^10.4.0",
+    "@carbon/type": "^10.3.0",
+    "@ibm/plex": "^2.0.0",
     "node-sass": "^4.12.0"
   }
 }

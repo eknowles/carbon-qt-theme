@@ -1,10 +1,22 @@
-@import '../../node_modules/@carbon/themes/scss/themes';
+@import '../../node_modules/@carbon/themes/scss/index';
+@import '../../node_modules/@carbon/type/scss/index';
+@import '../../node_modules/@carbon/layout/scss/index';
 
-$carbon--theme: $carbon--theme--g90;
+//$carbon--theme: $carbon--theme--white;
+$carbon--theme: $carbon--theme--g100;
 
 @include carbon--theme();
 
-QWidget {
-  background: $ui-background;
-  color: $text-01;
+@function em2px($target, $context: $carbon--base-font-size) {
+  @if $target == 0 { @return 0 }
+  @return ($target / 1em) * ($context / 1em) * 16 + 0px;
 }
+
+@import 'widgets/QWidget';
+@import 'widgets/QLabel';
+@import 'widgets/QMainWindow';
+@import 'widgets/QDockWidget';
+@import 'widgets/QPushButton';
+@import 'widgets/QComboBox';
+
+@import 'widgets/InputFields';

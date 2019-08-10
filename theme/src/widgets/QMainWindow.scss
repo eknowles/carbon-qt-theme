@@ -1,0 +1,26 @@
+QMainWindow {
+  background-color: $ui-background;
+
+  &::separator {
+    background-color: $ui-01;
+    border: 0 solid $ui-01;
+    margin: 0;
+    spacing: 0;
+    padding: 0;
+
+    &:hover {
+      background-color: $hover-ui;
+      border: 0 solid $hover-ui;
+    }
+
+    &:horizontal {
+      width: 2px;
+      //image: url(":/qss_icons/rc/toolbar_separator_vertical.png");
+    }
+
+    &:vertical {
+      height: 2px;
+      //image: url(":/qss_icons/rc/toolbar_separator_horizontal.png");
+    }
+  }
+}

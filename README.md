@@ -2,6 +2,8 @@
 
 > Builds a stylesheet and resource files for Qt 5
 
+Qt Style Sheets are a powerful mechanism that allows you to customize the appearance of widgets, in addition to what is already possible by subclassing QStyle. The concepts, terminology, and syntax of Qt Style Sheets are heavily inspired by HTML Cascading Style Sheets (CSS) but adapted to the world of widgets.
+
 ## Setup
 ### Demo Application
 

@@ -7,12 +7,40 @@
   resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-10.3.0.tgz#99df98f141c6d3a237d72ac9b21ad58a07112348"
   integrity sha512-LI+ZINCwf7iKXtaE3BkTdRtHpSwOe5FJtLwWxkqdsy69X4nMDKPc41ZJOW/lYAemeN4EHvm+LL9GD66eQpcVQQ==
 
+"@carbon/icons@^10.4.0":
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/@carbon/icons/-/icons-10.4.0.tgz#38bf0b57edb5ffd07ad6f73bf2a833823ab8bc56"
+  integrity sha512-ZKaz29giJ/ToVEIYQ5TaPXbSj9ruhfDTmZG/QvQuClV3oxIBk7psQDRANpfOZ7QHAyu1VwQJzx7BidLkbAeTSQ==
+
+"@carbon/import-once@10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.3.0.tgz#58617da4efb6d7a11352d8e6b7209da1d39f364d"
+  integrity sha512-PFk3FhMe3psihYtCg3JsyPHismqglnbUqIpz1DCG5Gn/kt0HdVKhGvHdEq7E305rGoBUCKzMn/4xoY9v9mcmlg==
+
+"@carbon/layout@10.3.0", "@carbon/layout@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.3.0.tgz#bbcac550bd3dcf573e504a48a61e290fa30b664c"
+  integrity sha512-qToFKyBVRATPz6TP8xBGmbQUj7qb9NUaxMYUJKcnVD+ssnV9KA2zLdwnm9wRP6bpLVXqoTNKIvHc+J3MP54Weg==
+
 "@carbon/themes@^10.4.0":
   version "10.4.0"
   resolved "https://registry.yarnpkg.com/@carbon/themes/-/themes-10.4.0.tgz#c957feb6315006f16e98d5fd319f9f5821393daf"
   integrity sha512-KVaSkp9XgK8yAmhJyua2DE+klRt7+R85ymQ0O79A3aOko1GWm1J2L/v+Gk8xQpU/wkNT8TFOaJtHBgGOz28Qkg==
   dependencies:
     "@carbon/colors" "10.3.0"
+
+"@carbon/type@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@carbon/type/-/type-10.3.0.tgz#77e180710d54e9367afab87708623a9370f17277"
+  integrity sha512-cH/cfsQKXsspeR1y7ZXvxdr3yNFvRbadKLbYF0Q448gS8Ypt/2OPamDdeqgQuDSVpd0d/q0AI5OwVNAdW3COXA==
+  dependencies:
+    "@carbon/import-once" "10.3.0"
+    "@carbon/layout" "10.3.0"
+
+"@ibm/plex@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ibm/plex/-/plex-2.0.0.tgz#309ac4d571ad23225fd28c4605ec86882d81997e"
+  integrity sha512-mmAyvkiDa8c17KwJN3u2HRfYkF0LwtvVNPkCkoXMjcoI7tKbhBegj+4Dr3UK4+EGzqv7/h6JBw5pTttXTBrRnw==
 
 abbrev@1:
   version "1.1.1"
