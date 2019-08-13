@@ -23,6 +23,8 @@ const fonts = [
 
 const svgsDir = NODE_MODULES + '/@carbon/icons/svg';
 const svgs = [
+  svgsDir + '/caret--up.svg',
+  svgsDir + '/caret--down.svg',
   svgsDir + '/16/chevron--down.svg',
   svgsDir + '/16/chevron--up.svg',
   svgsDir + '/16/close.svg',

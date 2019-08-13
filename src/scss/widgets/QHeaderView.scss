@@ -1,0 +1,35 @@
+// https://www.carbondesignsystem.com/components/data-table/style
+
+QHeaderView {
+  &::up-arrow,
+  &::down-arrow {
+    subcontrol-origin: content;
+    subcontrol-position: center right;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: $icon-01;
+  }
+
+  &::down-arrow {
+    image: url('./build/assets/svg/caret--down.svg');
+  }
+
+  &::up-arrow {
+    image: url('./build/assets/svg/caret--up.svg');
+  }
+
+  &::section {
+    color: $text-01;
+    text-align: left;
+    padding: 2px 16px;
+    border: 0;
+    background: $ui-03;
+    font: 600 14px 'IBM Plex Sans'; //$heading-01
+    border-bottom: 1px solid $ui-01;
+    border-right: 1px solid $ui-01;
+
+    &:checked {
+      background-color: $ui-03;
+    }
+  }
+}

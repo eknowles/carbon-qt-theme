@@ -2,8 +2,8 @@
 @import '../../node_modules/@carbon/type/scss/index';
 @import '../../node_modules/@carbon/layout/scss/index';
 
-//$carbon--theme: $carbon--theme--white;
-$carbon--theme: $carbon--theme--g90;
+$carbon--theme: $carbon--theme--white;
+//$carbon--theme: $carbon--theme--g90;
 
 @include carbon--theme();
 
@@ -21,11 +21,12 @@ $carbon--theme: $carbon--theme--g90;
 @import 'widgets/QComboBox';
 @import 'widgets/QStatusBar';
 @import 'widgets/QSpinBox';
+@import 'widgets/QCheckBox';
+
+// for tables/calendar
+@import 'widgets/QTableView';
+@import 'widgets/QHeaderView';
 
 // Multiple Styles (i.e.) these directly target a group of Widgets
 @import 'widgets/InputFields';
 @import 'widgets/Tabs';
-
-* {
-  background-color: $ui-background;
-}

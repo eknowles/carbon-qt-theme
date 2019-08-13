@@ -1,5 +1,6 @@
 QDockWidget {
   color: $text-01;
+  background: $ui-01;
   border: 0;
   padding: 0;
   margin: 0;
@@ -13,20 +14,20 @@ QDockWidget {
     padding: 0;
     background: $ui-01;
     alignment: left;
+    min-height: 60px;
   }
 
-  //&::close-button {
-  //  subcontrol-position: center right;
-  //  subcontrol-origin: content;
-  //  height: 40px;
-  //  width: 40px;
-  //  padding: 2px;
-  //}
-  //
-  //&::float-button {
-  //  subcontrol-position: center left;
-  //  subcontrol-origin: content;
-  //}
+  &::close-button {
+    subcontrol-position: center right;
+    subcontrol-origin: content;
+    padding: 0;
+    margin: 0;
+  }
+
+  &::float-button {
+    subcontrol-position: center left;
+    subcontrol-origin: content;
+  }
 
   &::float-button,
   &::close-button {

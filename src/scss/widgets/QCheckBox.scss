@@ -1,0 +1,28 @@
+QCheckBox,
+QRadioButton {
+  color: $text-02;
+  font: 400 12px "IBM Plex Sans";
+  spacing: 8px;
+
+  &:disabled {
+    background-color: transparent;
+    color: $text-03;
+  }
+
+  &::indicator {
+    border: 1px solid $text-01;
+    background: none;
+    width: 16px;
+    height: 16px;
+
+    &:checked {
+      background: $focus;
+    }
+  }
+}
+
+QRadioButton {
+  &::indicator {
+    border-radius: 9px;
+  }
+}

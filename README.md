@@ -11,10 +11,30 @@ Qt Style Sheets are a powerful mechanism that allows you to customize the appear
 
 ## Setup
 
-### Node.js
+Requirements
 
-1. Install Node.js
-1. Install Yarn
+- node.js LTS
+- yarn
+- python3
+
+### Development
+
+Edit scss files in the `./src` directory and run
+
+```bash
+yarn start
+```
+
+This will compile sass and pull fonts and icons from @carbon/@ibm libraries to the build folder. 
+
+### Qt Designer
+
+Some settings for each widget need some properties set in the application code to fit the style.
+
+#### Tables
+
+- [showGrid](https://doc.qt.io/qt-5/qtableview.html#showGrid-prop) - Set to false - This is because Qt will draw borders
+around cells, we just want a bottom border on the table row so we manage this with css in QTableView.
 
 ## Components
 

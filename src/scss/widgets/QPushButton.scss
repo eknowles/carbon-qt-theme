@@ -3,7 +3,8 @@ QPushButton {
   border-radius: 0;
   background-color: $interactive-02;
   color: $text-04;
-  padding: 8px 16px;
+  min-height: 38px;
+  padding: 2px 16px;
   text-align: left;
 
   &[text="OK"] {

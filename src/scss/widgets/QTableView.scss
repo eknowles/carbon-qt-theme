@@ -1,0 +1,39 @@
+// https://www.carbondesignsystem.com/components/data-table/style
+
+QTableView {
+  &::item {
+    font: 14px "IBM Plex Sans";
+    color: $text-01;
+    background-color: $ui-01;
+    border-bottom: 1px solid $ui-03;
+    border-right: 1px solid $ui-03;
+
+    &:selected {
+      background-color: $interactive-01;
+    }
+
+    &:hover {
+      color: $text-04;
+      background-color: $hover-row;
+    }
+
+    &:hover:selected {
+      color: $text-04;
+      background-color: $interactive-04;
+    }
+  }
+
+  &::indicator {
+    &:unchecked {
+    }
+  }
+
+  QTableCornerButton {
+    &::section {
+      border: 0;
+      background: $ui-03;
+      border-bottom: 1px solid $ui-03;
+      border-right: 1px solid $ui-01;
+    }
+  }
+}
